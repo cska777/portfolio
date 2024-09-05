@@ -14,7 +14,8 @@ export default function Projets() {
     useEffect(() => {
         async function fetchProjets() {
             try {
-                const res = await fetch('/data/projets.json', { cache: 'no-cache' });
+                const res = await fetch('/portfolio/data/projets.json', { cache: 'no-cache' });
+
                 if (!res.ok) {
                     throw new Error('Erreur lors de la récupération des projets');
                 }
