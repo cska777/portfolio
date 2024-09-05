@@ -1,0 +1,62 @@
+.section-parcours{
+    min-height: 100vh;
+    padding-top: 10%;
+}
+
+.div-parcours-glo {
+    display: flex;
+    align-items: center; 
+    min-height: 70vh; 
+}
+
+
+.list-parcours{
+    list-style-type: none;
+    color: hsl(var(--accent));
+    font-size: 40px;
+}
+
+.list-parcours li{
+    padding-bottom: 3%;
+    cursor: pointer;
+}
+
+.list-parcours li.active{
+    color: white;
+    text-shadow: 1px 1px 24px  hsl(var(--primary))
+}
+
+.div-parcours-glo hr {
+    height: 30vh;
+    width: 5px;
+    margin-left: 10%;
+    background-color: hsl(var(--primary));
+    box-shadow: hsl(var(--destructive)) 0px 2px 8px;
+    position: relative;
+    border: none;
+    flex-shrink: 0; 
+}
+
+.droite-parcours{
+    margin-left: 3%;
+    color: hsl(var(--primary-foreground));
+}
+
+.droite-parcours p{
+    font-size: 20px;
+}
+
+.droite-parcours li{
+    list-style: none;
+    font-size: 20px;
+}
+
+.droite-parcours div.hidden {
+    display: none;
+}
+
+.droite-parcours h4{
+    font-size: 20px;
+}
+
+

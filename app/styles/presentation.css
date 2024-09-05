@@ -1,0 +1,37 @@
+.div-glo-presentation {
+    display: flex;
+}
+
+.section-presentation {
+    height: 100vh;
+}
+
+.section-presentation h1 {
+    font-size: 60px;
+    padding-top: 10%;
+    margin-bottom: 3%;
+    color: hsl(var(--ring));
+    z-index: 1000;
+}
+
+.section-presentation h2{
+    font-size: 30px;
+    margin-top: -40px;
+    color: hsl(var(--accent));
+    text-align: center;
+}
+
+.div-presentation-text {
+    width: 50%;
+    color: hsl(var(--popover-foreground));
+    margin-top: 30%;
+    font-size: 20px;
+}
+
+
+.div-titre-presentation {
+    width: 50%;
+    margin-top: 15%;
+    padding-left: 5%;
+}
+

@@ -1,0 +1,129 @@
+#projets {
+    color: hsl(var(--primary-foreground));
+    min-height: 100vh;
+    padding-top: 10%;
+}
+
+#projets li {
+    list-style-type: none;
+}
+
+
+.gauche-projets-impair,
+.droite-projets-impair,
+.droite-projets-pair,
+.gauche-projets-pair {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------------- Styles pour les projets Impair --------------------- */
+
+.div-projets-impair {
+    display: flex;
+    margin-top: 10%;
+}
+
+.div-projets-h2-impair {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 5px 0px;
+}
+
+.div-projets-h2-impair hr {
+    width: 40%;
+    height: 0px;
+    border: 1px solid hsl(var(--ring));
+    margin-left: 5%;
+    margin-right: 2%;
+}
+
+
+.droite-projets-impair {
+    position: relative;
+    margin-left: 3%;
+}
+
+.div-techno-impair {
+    margin-top: 5%;
+}
+
+
+/* ------------------ Styles pour les projets pair -------------------------------- */
+
+.div-projets-pair {
+    display: flex;
+    margin-top: 10%;
+}
+
+.gauche-projets-pair {
+    position: relative;
+    margin-right: 15%;
+}
+
+.div-projets-h2-pair {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 5px 0px;
+}
+
+.div-projets-h2-pair hr {
+    width: 40%;
+    height: 0px;
+    border: 1px solid hsl(var(--ring));
+    margin-left: 2%;
+    margin-right: 5%;
+}
+
+
+.div-techno-pair {
+    margin-top: 5%;
+}
+
+
+.button-techno {
+    padding: 5px 10px;
+    margin: 5px;
+    color: hsl(var(--primary-foreground));
+    background-color: hsl(var(--muted));
+    border: 1px solid hsl(var(--border));
+}
+
+.div-projets-pair p {
+    text-align: right;
+}
+
+/* ---------------------- Style Carousel -------------------- */
+.embla {
+    overflow: hidden;
+  }
+  .embla__container {
+    display: flex;
+  }
+  .embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+  }
+  
+.embla__prev{
+    margin-left: 50%;
+    border: none;
+    background: transparent;
+    color: hsl(var(--primary));
+    cursor: pointer;
+    margin-top: 3%;
+}
+
+.embla__next{
+    border: none;
+    background: transparent;
+    color: hsl(var(--primary));
+    cursor: pointer;
+    margin-top: 3%;
+}

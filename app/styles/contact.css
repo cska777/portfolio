@@ -1,0 +1,44 @@
+.section-contact{
+    min-height: 100vh;
+    padding-top: 10%;
+}
+
+.section-contact h2{
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+.h2-contact{
+    margin-top: 10%;
+}
+
+.section-contact button{
+    padding: 5px 10px;
+    margin: 10px 0px;
+    color: hsl(var(--primary-foreground));
+    background-color: hsl(var(--muted));
+    border: 1px solid hsl(var(--border));
+    font-size: 20px;
+    align-items: center;
+    width: 30%;
+    cursor: pointer;
+}
+
+
+.section-contact svg{
+    font-size: 15px;
+    margin-right: 2%;
+}
+
+.section-contact li{
+    list-style: none;
+}
+
+.div-glo-contact{
+    color : white
+}
+
+.section-contact a {
+    text-decoration: none;
+    color: white;
+}

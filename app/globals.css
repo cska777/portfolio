@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Figtree:700|Figtree:400');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: 214 17% 8%;
+  --foreground: 218 7% 78%;
+  --muted: 214 12% 15%;
+  --muted-foreground: 214 12% 65%;
+  --popover: 214 17% 5%;
+  --popover-foreground: 218 7% 88%;
+  --card: 214 17% 6%;
+  --card-foreground: 218 7% 83%;
+  --border: 214 7% 13%;
+  --input: 214 7% 16%;
+  --primary: 346 62% 48%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 346 30% 75%;
+  --secondary-foreground: 346 30% 15%;
+  --accent: 214 17% 23%;
+  --accent-foreground: 214 17% 83%;
+  --destructive: 8 88% 48%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 346 62% 48%;
+}
+
+body {
+  font-family: 'Figtree';
+  font-weight: 400;
+  background-color: hsl(var(--background));
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+}
+
+html {font-size: 100%;} /* 16px */
+
+
+.sectionStyleGlo{
+  padding:0 30px;
+  max-width: 80%;
+  margin:auto;
+}

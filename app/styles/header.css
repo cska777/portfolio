@@ -1,0 +1,46 @@
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    height: 7vh;
+    padding-top: 2%;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+header.visible{
+    transform: translateY(0);
+}
+
+header.hidden{
+    transform: translateY(-100%);
+}
+
+header span{
+    color: hsl(var(--primary));
+    margin-left: 5%;
+}
+
+.nav-items{
+    display: flex;
+    list-style-type: none;
+    margin-right: 5%;
+}
+
+.nav-item{
+    margin: 0 10px;
+}
+
+.nav-item a{
+    color: hsl(var(--primary));
+    text-decoration: none;
+}
+
+.nav-item a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
