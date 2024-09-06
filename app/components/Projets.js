@@ -50,6 +50,8 @@ export default function Projets() {
 }
 
 function ProjetItem({ projet }) {
+    const isProd = process.env.NODE_ENV === "production"
+    const baseImagePath = isProd ? '/portfolio' : ''
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
     const isImpair = projet.id % 2 !== 0;
     const impairPlusGrandQueUn = projet.id % 2 !== 0 && projet.id > 1;
@@ -80,10 +82,15 @@ function ProjetItem({ projet }) {
                         </div>
                     </div>
                     <div className="droite-projets-impair">
-                        <Carousel 
-                            emblaRef={emblaRef} 
-                            images={[projet.illu_url1, projet.illu_url2, projet.illu_url3, projet.illu_url4]} 
-                            nom={projet.nom} 
+                        <Carousel
+                            emblaRef={emblaRef}
+                            images={[
+                                `${baseImagePath}${projet.illu_url1}`,
+                                `${baseImagePath}${projet.illu_url2}`,
+                                `${baseImagePath}${projet.illu_url3}`,
+                                `${baseImagePath}${projet.illu_url4}`
+                            ]}
+                            nom={projet.nom}
                             className="illu-pair"
                             scrollPrev={scrollPrev}
                             scrollNext={scrollNext}
@@ -93,10 +100,15 @@ function ProjetItem({ projet }) {
             ) : (
                 <>
                     <div className="gauche-projets-pair">
-                        <Carousel 
-                            emblaRef={emblaRef} 
-                            images={[projet.illu_url1, projet.illu_url2, projet.illu_url3, projet.illu_url4]} 
-                            nom={projet.nom} 
+                        <Carousel
+                            emblaRef={emblaRef}
+                            images={[
+                                `${baseImagePath}${projet.illu_url1}`,
+                                `${baseImagePath}${projet.illu_url2}`,
+                                `${baseImagePath}${projet.illu_url3}`,
+                                `${baseImagePath}${projet.illu_url4}`
+                            ]}
+                            nom={projet.nom}
                             className="illu-impair"
                             scrollPrev={scrollPrev}
                             scrollNext={scrollNext}
@@ -127,11 +139,11 @@ function Carousel({ emblaRef, images, nom, className, scrollPrev, scrollNext }) 
                 <div className="embla__container">
                     {images.map((image, index) => (
                         <div key={index} className="embla__slide">
-                            <Image 
+                            <Image
                                 src={image}
                                 alt={`Illustration ${index + 1} pour le projet ${nom}`}
                                 width={500}
-                                height={300} 
+                                height={300}
                                 layout="responsive"
                                 className={`illu${index + 1}-projets-${className} ${className}`}
                             />

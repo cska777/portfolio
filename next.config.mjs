@@ -6,7 +6,7 @@ const nextConfig = {
     reactStrictMode: true,
     images: { 
       unoptimized: true,
-      path : "production" ? 'https://cska777.github.io/portfolio/' : "",
+      path : process.env.NODE_ENV === "production" ? 'https://cska777.github.io/portfolio/' : "",
     }
   };
   
