@@ -14,8 +14,12 @@ export default function Projets() {
     useEffect(() => {
         async function fetchProjets() {
             try {
-                const res = await fetch('/portfolio/data/projets.json', { cache: 'no-cache' });
-
+                
+                const isLocal = window.location.hostname === 'localhost';
+                const basePath = isLocal ? '/data/projets.json' : '/portfolio/data/projets.json';
+    
+                const res = await fetch(basePath, { cache: 'no-cache' });
+    
                 if (!res.ok) {
                     throw new Error('Erreur lors de la récupération des projets');
                 }
