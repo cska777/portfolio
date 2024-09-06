@@ -127,12 +127,11 @@ function Carousel({ emblaRef, images, nom, className, scrollPrev, scrollNext }) 
                 <div className="embla__container">
                     {images.map((image, index) => (
                         <div key={index} className="embla__slide">
-                            {/* Utilisation de la balise <Image /> de Next.js */}
                             <Image 
                                 src={image}
                                 alt={`Illustration ${index + 1} pour le projet ${nom}`}
-                                width={500} // Largeur de l'image
-                                height={300} // Hauteur de l'image
+                                width={500}
+                                height={300} 
                                 layout="responsive"
                                 className={`illu${index + 1}-projets-${className} ${className}`}
                             />
