@@ -1,6 +1,7 @@
 "use client";
 
 import { Section } from './Section';
+import Image from 'next/image';
 import "../styles/projets.css";
 import '../styles/arrow.css';
 import useEmblaCarousel from 'embla-carousel-react';
@@ -14,11 +15,15 @@ export default function Projets() {
     useEffect(() => {
         async function fetchProjets() {
             try {
-                const res = await fetch('/portfolio/data/projets.json', { cache: 'no-cache' });
+                const isLocal = window.location.hostname === 'localhost';
+                const basePath = isLocal ? '/data/projets.json' : '/portfolio/data/projets.json'; // Gestion des chemins locaux et production
+
+                const res = await fetch(basePath, { cache: 'no-cache' });
 
                 if (!res.ok) {
                     throw new Error('Erreur lors de la récupération des projets');
                 }
+
                 const data = await res.json();
                 setProjets(data);
             } catch (error) {
@@ -33,7 +38,7 @@ export default function Projets() {
             {projets.map((projet) => (
                 <ProjetItem key={projet.id} projet={projet} />
             ))}
-             <div className="div-arrow-flex">
+            <div className="div-arrow-flex">
                 <div className="div-arrow">
                     <div className="arrow arrowSliding delay1"></div>
                     <div className="arrow arrowSliding delay2"></div>
@@ -122,7 +127,15 @@ function Carousel({ emblaRef, images, nom, className, scrollPrev, scrollNext }) 
                 <div className="embla__container">
                     {images.map((image, index) => (
                         <div key={index} className="embla__slide">
-                            <img src={image} className={`illu${index + 1}-projets-${className} ${className}`} alt={`Illustration ${index + 1} pour le projet ${nom}`} />
+                            {/* Utilisation de la balise <Image /> de Next.js */}
+                            <Image 
+                                src={image}
+                                alt={`Illustration ${index + 1} pour le projet ${nom}`}
+                                width={500} // Largeur de l'image
+                                height={300} // Hauteur de l'image
+                                layout="responsive"
+                                className={`illu${index + 1}-projets-${className} ${className}`}
+                            />
                         </div>
                     ))}
                 </div>
