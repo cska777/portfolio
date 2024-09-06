@@ -4,29 +4,29 @@
         "nom": "On regarde quoi ?",
         "desc": "Projet personnel proposant un choix de film ainsi que de série en fonction des goûts de l'utilisateur, permet aussi un suivi grâce à une watchlist",
         "techno": ["React", "Django REST"],
-        "illu_url1": "/images/ORQ/illu_ORQ_1.png",
-        "illu_url2": "/images/ORQ/illu_ORQ_2.png",
-        "illu_url3": "/images/ORQ/illu_ORQ_3.png",
-        "illu_url4": "/images/ORQ/illu_ORQ_4.png"
+        "illu_url1": "/portfolio/images/ORQ/illu_ORQ_1.png",
+        "illu_url2": "/portfolio/images/ORQ/illu_ORQ_2.png",
+        "illu_url3": "/portfolio/images/ORQ/illu_ORQ_3.png",
+        "illu_url4": "/portfolio/images/ORQ/illu_ORQ_4.png"
     },
     {
         "id" : 2,
         "nom" : "Les Amis du Monde",
         "desc" : "Site internet développé pour l'ONG Les Amis du Monde, ayant pour but de promouvoir les actions de l'association et offrant la possibilité de faire des dons. L'ONG œuvre dans différents pays d'Afrique pour permettre aux populations locales de se développer.",
         "techno": ["Symfony", "Stripe"] , 
-        "illu_url1":"/images/LADM/LADM_illu1.png",
-        "illu_url2":"/images/LADM/LADM_illu2.png",
-        "illu_url3":"/images/LADM/LADM_illu3.png",
-        "illu_url4":"/images/LADM/LADM_illu4.png"
+        "illu_url1":"/portfolio/images/LADM/LADM_illu1.png",
+        "illu_url2":"/portfolio/images/LADM/LADM_illu2.png",
+        "illu_url3":"/portfolio/images/LADM/LADM_illu3.png",
+        "illu_url4":"/portfolio/images/LADM/LADM_illu4.png"
     },
     {
         "id" : 3,
         "nom" : "Villa Canis",
         "desc" : "Ce site vitrine a pour objectif de mettre en avant le bien de particuliers souhaitant le louer à différents moments de l'année.",
         "techno" : ["HTML", "CSS", "JS"],
-        "illu_url1":"/images/VC/VC_illu1.png",
-        "illu_url2":"/images/VC/VC_illu2.png",
-        "illu_url3":"/images/VC/VC_illu3.png",
-        "illu_url4":"/images/VC/VC_illu4.png"
+        "illu_url1":"/portfolio/images/VC/VC_illu1.png",
+        "illu_url2":"/portfolio/images/VC/VC_illu2.png",
+        "illu_url3":"/portfolio/images/VC/VC_illu3.png",
+        "illu_url4":"/portfolio/images/VC/VC_illu4.png"
     }
 ]
